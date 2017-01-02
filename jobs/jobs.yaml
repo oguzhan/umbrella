@@ -1,0 +1,19 @@
+jobs:
+  - name: job_applications
+    query: queries/extract-job-applications.sql
+    definition: tables/create-job-applications.sql
+    chunksize: 10000
+    operation: move
+    sourcetable: job_applications
+    targettable: job_applications
+    dbname: rds-production
+    operation: move
+
+  - name: candidate_details
+    query: queries/extract-candidate-details.sql
+    definition: tables/create-candidate-details.sql
+    chunksize: 100
+    sourcetable: candidate_details
+    targettable: candidate_details
+    dbname: rds-production
+    operation: sync
