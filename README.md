@@ -20,6 +20,6 @@ Another point of the project is that it should provide Analyst-Friendly Pipeline
 and that's it!
 
 ### Installation and Setting Up
-First idea was creating a Docker Image, and providing YAML configuration guidence for setup. But lately I've been experimenting around with AWS Lambda (have a look at [AWS Lambda, Serverless, API Gateway Article here](http://dchua.com/2016/03/22/writing-a-serverless-python-microservice-with-aws-lambda-and-aws-api-gateway/) and started to think about creating compressed file of the project and using AWS Lambda and also minimize maintenance, scalability aspects.
+First idea was creating a Docker Image, and providing YAML configuration guidence for setup. But lately I've been experimenting around with AWS Lambda (have a look at [AWS Lambda, Serverless, API Gateway Article here](http://dchua.com/2016/03/22/writing-a-serverless-python-microservice-with-aws-lambda-and-aws-api-gateway/) and started to think about creating compressed file of the project and using AWS Lambda to also minimize maintenance, scalability aspects.
 
 Tell me what you think please.
