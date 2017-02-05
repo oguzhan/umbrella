@@ -11,7 +11,7 @@ There will be two YAML files for configurations. First one is to keep both datab
 * Sync : Compare primary keys and load the data (Inceremental Load)
 * Update/Insert: See [UpdateInsert - AWS](http://docs.aws.amazon.com/redshift/latest/dg/t_updating-inserting-using-staging-tables-.html)
 
-Another point of the project is that it should be Analyst-Friendly Pipeline. That means, when analysts (or data scientists, depending on your team structure) want to add new job to the pipeline, they shouldn't need more than a review from data engineers. To be able to achieve that, analyst should follow this pipeline;
+Another point of the project is that it should provide Analyst-Friendly Pipeline. That means, when analysts (or data scientists, depending on your team structure) want to add new job to the pipeline, they shouldn't need more than a review from data engineers. To be able to achieve that, analyst should follow this pipeline;
 1. Write the SQL that needs to be run on Source Database (see [queries dir](https://github.com/oguzhan/umbrella/tree/master/database/queries))
 2. Write or Update the table definiton if necessary. (see [table definitions](https://github.com/oguzhan/umbrella/tree/master/database/table_definitions))
 3. Add job specs to jobs.yaml (possibly on S3, see [example job spec](https://github.com/oguzhan/umbrella/blob/master/jobs/jobs.yaml))
